@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+:root {
+   --cinza: #b5bdcb;
+   --cinzaclaro: #ccd3de;
+   --cinzaEscuro: #9ba4b5;
+   --azulEscuro: #111827;
+}
+body {
+   background-color: #fff; /* Fundo escuro */
+   margin: 0;
+   font-family: "Mona Sans", serif;
+   font-size: 1.2rem;
+}
+header {
+   background: linear-gradient(60deg, #046cd4, #013c7f);
+}
+h1{
+   font-weight: 600!important;
+   color: var(--cinzaclaro);
+}
+h1 span{
+   font-weight: 800;
+   color:#fff;
+}
+
+h1{
+   font-weight: 800;
+   font-size: 2rem;
+}
+small{
+   font-size: .8rem;
+}
+
+h2 {
+   position: relative;
+   display: flex;
+   justify-content: center; /* Centraliza o botão horizontalmente */
+   align-items: center; /* Centraliza o botão verticalmente */
+   width: 100%;
+   margin: 50px 0px 40px;
+}
+
+h2:before {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 0;
+   right: 0;
+   height: 1px;
+   background-color: #99a0cb; /* Cor da linha */
+   z-index: 0;
+}
+
+.button-h2 {
+   display: inline-block;
+   padding: 10px 20px;
+   font-size: 14px;
+   font-family: Arial, sans-serif;
+   color: #cfcfcf;
+   background-color: #1f2235; /* Fundo do botão */
+   border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil */
+   border-radius: 20px; /* Cantos arredondados */
+   text-align: center;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   position: relative;
+   z-index: 1;
+}
+
+.button-h2:hover {
+   background-color: #2d3149; /* Mudança de cor no hover */
+   color: #ffffff;
+}
+
+/* offcanvas */
+
+.offcanvas{
+   width: 40% !important;
+   .offcanvas-title{
+      /* text-transform: uppercase; */
+      font-size: 1.3rem;
+      font-weight: 700;
+   }
+}
+
+/* Formatação de code e pre */
+
+code{
+   font-size: 1.2rem;
+}
+pre{
+   padding:12px;
+   background-color: #2d3149;
+   color: #ddd;
+   border-radius: 8px;
+}
+
+/* ajuste de espaçamento entre os botões */
+
+.container-1{
+   .btn{
+      width: 24%;
+      text-align: start;
+      margin-bottom: 15px;
+   }
+}
+.container-2{
+   .btn{
+      width: 49%;
+      text-align: start;
+      margin-bottom: 15px;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .container-1{
+      .btn{
+         width: 100%;
+      }
+   }
+   .container-2{
+      .btn{
+         width: 100%;
+      }
+   }   
+}
